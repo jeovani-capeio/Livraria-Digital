@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivroVivo</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="stylesheet" href="Estilos/telas-grandes.css" media="screen">
+    <link rel="stylesheet" href="Estilos/style_formulario.css">
+    <style>
+        main .grid-ctn .card-ctn{
+    background-color: red;
+    width: 100vw;
+    height: 20px;
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"> <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v17H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M12 3h5.5A2.5 2.5 0 0 1 20 5.5V22a2.5 2.5 0 0 0-2.5-2.5H12z"/> </svg>
+
+                <p>LivroVivo</p>
+
+        </div>
+        
+        <form action="arquivo.php" method="get">
+                <input type="search" name="pesquisa" id="ipesquisa" placeholder="Pesquisar">
+
+                <input type="button" value="Login" class="botao-verde">
+            </form>
+
+
+        <menu>
+            <svg id="point" onclick="hamburguer()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>
+            </svg>
+
+
+            <nav id="lista">
+
+            <ul>
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="#"><li>Categoria</li></a>
+                <a href="#"><li>Mais Lidos</li></a>
+                <a href=""><li>Novidades</li></a>
+                <a href=""><li>Sobre</li></a>
+            </ul>
+        </nav>
+
+        </menu>
+        
+
+            
+
+    </header>
+
+    <main>
+        <section class="tela">
+            <div class="slides"></div>
+            <div class="color"></div>
+            <div class="texto-container">
+                <h1>Ficção</h1>
+                <p>Leia online ou faça download dos melhores livros em um só lugar.<br> </p>
+            </div>
+
+            <form action="arquivo.php" method="get">
+                <input type="button" class="botao-verde" value="Explorar">
+                <input type="button" class="botao-transparente" value="Ver Novidades">
+            </form>
+        </section>
+
+
+        <section class="livros-ctn">
+
+
+            <article class="card-ctn">
+                <div class="imagem">
+                    <img src="Imagens/Harry_Potter_1.jpg" alt="">
+                </div>
+
+                <div class="textos">
+                    <div class="info-ctn">
+                        <h3>Harry Potter</h3>
+                    <p>Autor</p>
+                    <span class="estrela">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 24 24"
+fill="#ccad23" stroke="#ccad23" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/>
+</svg>  
+                        Estrela
+
+                    </span>
+                    </div>
+                    
+                    <div class="botoes">
+                        <a href="#" >
+                            <button class="btn-verde">Ler</button>
+                        </a>
+                        <a href="#" >
+                            <button class="btn-baixar">Download </button>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="card-ctn">
+                <div class="imagem">
+                    <img src="Imagens/O_Pequeno_Principe.jpg" alt="">
+                </div>
+
+                <div class="textos">
+                    <div class="info-ctn">
+                        <h3>O Pequeno Principe</h3>
+                    <p>Autor</p>
+                    <span class="estrela">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 24 24"
+fill="#ccad23" stroke="#ccad23" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/>
+</svg>  
+                        Estrela
+
+                    </span>
+                    </div>
+                    
+                    <div class="botoes">
+                        <a href="#" >
+                            <button class="btn-verde">Ler</button>
+                        </a>
+                        <a href="#" >
+                            <button class="btn-baixar">Download </button>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="card-ctn">
+                <div class="imagem">
+                    <img src="Imagens/O_Siléncio_dos_Inocentes.jpg" alt="">
+                </div>
+
+                <div class="textos">
+                    <div class="info-ctn">
+                        <h3>O Siléncio dos Inocentes</h3>
+                    <p>Autor</p>
+                    <span class="estrela">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 24 24"
+fill="#ccad23" stroke="#ccad23" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/>
+</svg>  
+                        Estrela
+
+                    </span>
+                    </div>
+                    
+                    <div class="botoes">
+                        <a href="#" >
+                            <button class="btn-verde">Ler</button>
+                        </a>
+                        <a href="#" >
+                            <button class="btn-baixar">Download </button>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="card-ctn">
+                <div class="imagem">
+                    <img src="Imagens/A_menina_que_roubava_livros.jpg" alt="">
+                </div>
+
+                <div class="textos">
+                    <div class="info-ctn">
+                        <h3>A Menina que roubava livros</h3>
+                    <p>Autor</p>
+                    <span class="estrela">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 24 24"
+fill="#ccad23" stroke="#ccad23" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/>
+</svg>  
+                        Estrela
+
+                    </span>
+                    </div>
+                    
+                    <div class="botoes">
+                        <a href="#" >
+                            <button class="btn-verde">Ler</button>
+                        </a>
+                        <a href="#" >
+                            <button class="btn-baixar">Download </button>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="card-ctn">
+                <div class="imagem">
+                    <img src="Imagens/Harry_Potter_1.jpg" alt="">
+                </div>
+
+                <div class="textos">
+                    <div class="info-ctn">
+                        <h3>Titulo</h3>
+                    <p>Autor</p>
+                    <span class="estrela">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 24 24"
+fill="#ccad23" stroke="#ccad23" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/>
+</svg>  
+                        Estrela
+
+                    </span>
+                    </div>
+                    
+                    <div class="botoes">
+                        <a href="#" >
+                            <button class="btn-verde">Ler</button>
+                        </a>
+                        <a href="#" >
+                            <button class="btn-baixar">Download </button>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <section class="footer-principal">
+
+            <div class="info-site">
+                
+                    <h3>LivroVivo</h3>
+                    <p>Seu portal para explorar <br>ler e baixar livros de qualidade.</p>
+                    <div class="redes-sociais">
+                        🐼 🐼 🐼
+                    </div>
+                
+            </div>
+
+            <div class="ajuda">
+                <h3>Ajuda</h3>
+                <a href="#">Como Funciona</a>
+                <a href="#">Perguntas Frequentes</a>
+                <a href=""> Politica de Privacidade</a>
+                <a href="">Termos de Uso</a>
+                <a href="">Contacto</a>
+            </div>
+
+            <div class="cadastro-login">
+                <h3>Entre ou Cadastre-se</h3>
+                <p>Acesse ou faça login na sua conta para salvar<br>
+                    favoritos, acompanhar leituras e mutio mais.</p>
+                <form action="arquivo.php" method="get">
+                    <input type="button" class="botao-verde" value="Login">
+
+                    <input type="button" class="botao-transparente" value="Cadastrar">
+                </form>
+            </div>
+
+        </section>
+
+        <span>@Criado por J300-2026</span>
+        
+    </footer>
+
+    <script>
+        function hamburguer(){
+            if (lista.style.display =="none"){
+                lista.style.display="block"
+            }
+            else{
+                lista.style.display="none"
+            }
+            
+        }
+    </script>
+</body>
+</html>

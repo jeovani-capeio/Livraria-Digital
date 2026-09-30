@@ -1,0 +1,169 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    margin: auto;
+}
+main .tela{
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    
+}
+
+main .tela .slides{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    animation: slider 10s infinite;
+}
+
+/* #004b9c8c */
+main .livros-ctn{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+main .livros-ctn .card-ctn{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+main .livros-ctn .card-ctn:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.181);
+}
+main .card-ctn .imagem{
+    overflow: hidden;
+    border-radius: 5px;
+    height: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.213);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.185);
+    
+}
+main .card-ctn .imagem img{
+    background-color: #0d1b2ac5;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/16;
+}
+
+main .card-ctn .textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .textos .info-ctn{
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+main .textos .info-ctn h3{
+    font-weight: bold;
+    color: rgb(35, 35, 35);
+    transition: all 0.5s ease;
+}
+main .textos .info-ctn p{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(93, 93, 93);
+}
+
+main .info-ctn .estrela{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 0.7em;
+    color: rgb(93, 93, 93);
+}
+
+main .botoes a{
+    text-decoration: none;
+}
+main .botoes button{
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+main .botoes .btn-verde{
+    background-color: var(--verd-principal);
+    color: #f0f0f0;
+    border: none;
+    width: 70px;
+    transition: background-color 0.5s;
+}
+main .botoes .btn-verde:hover{
+    background-color: var(--verde-invertido);
+}
+
+main .botoes .btn-baixar{
+    border: 0.5px solid rgba(40, 40, 40, 0.164);
+    transition: background-color 0.5s;
+}
+
+
+@keyframes slider{
+    0%{
+        background-image: url(../Imagens/Ficção/Dobra_tempo.jpg);
+    }
+    50%{
+        background-image: url(../Imagens/Ficção/Cavaleiros.jpg);
+    }
+    100%{
+        background-image: url(../Imagens/Ficção/Neuromancer.jpg);
+    }
+}
+
+
+/* Alterações para telas menores de 360 */
+
+@media screen and (min-width:700px){
+
+    main .tela .color{
+        background: #0230619e;
+        
+    }
+
+    main .livros-ctn{
+        
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+    main .livros-ctn .card-ctn{
+    grid-template-columns: 1fr;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+    main .card-ctn .imagem{
+    height: 220px;
+}
+main .card-ctn .imagem img{
+    object-fit: center;
+    aspect-ratio: 0/0;
+}
+
+main .textos .info-ctn{
+   gap: 5px;
+}
+
+}
+
+
