@@ -108,7 +108,7 @@ main .botoes .btn-verde{
     color: #f0f0f0;
     border: none;
     width: 70px;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, width 0.5s;
 }
 main .botoes .btn-verde:hover{
     background-color: var(--verde-invertido);
@@ -134,6 +134,23 @@ main .botoes .btn-baixar{
 
 
 /* Alterações para telas menores de 360 */
+
+
+@media screen and (max-width:325px){
+
+    
+
+    main .botoes .btn-verde{
+        margin-bottom: 5px;
+        height: 27px;
+    }
+  
+    
+
+}
+
+
+
 
 @media screen and (min-width:700px){
 

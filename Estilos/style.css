@@ -17,10 +17,10 @@
     --co3:#1B263B;
     --cor6:#E9ECEF;
     --cor7:#C97A3D;
-    background-color: #59f8bb;
 }
 body{
     background-color: var(--cor6);
+    
 }
 header{
     background-color: var(--co3);
